@@ -35,41 +35,36 @@ class Solution {
     // Function to detect cycle in a directed graph.
     public boolean isCyclic(int V, ArrayList<ArrayList<Integer>> adj) {
         
-        boolean[] visited = new boolean[V];
-        boolean[] inRecPath = new boolean[V];
-        
-        
-        //for the components
+        //1. indegree
+        int[] indegree = new int[V];
         for(int i=0; i<V; i++){
-            if(!visited[i]){
-                if(dfs(i,adj,visited,inRecPath))
-                    return true;
+            for(int nbr : adj.get(i)){
+                indegree[nbr]++;
             }
         }
         
-        return false;
-    }
-    public boolean dfs(int node,ArrayList<ArrayList<Integer>> adj,boolean[] visited,boolean[] inRecPath)
-    {
-        visited[node] = true;
-        inRecPath[node] = true;
-        
-        for(int nbr : adj.get(node)){
-            //if nbr node is not visited
-            if(!visited[nbr]){
-                if(dfs(nbr,adj,visited,inRecPath))
-                    return true;
-            }
-            //nbr is visited and in the path
-            else if(inRecPath[nbr]){
-                return true;
-            }
+        //2.adding 0 in the queue
+        Queue<Integer> q = new LinkedList<>();
+        for(int i=0; i<V; i++){
+            if(indegree[i]==0)
+                q.add(i);
         }
         
-        inRecPath[node] = false;
-        return false;
+        //3. level order tarversal
+        int count = 0;
+        while(q.size()>0)
+        {
+            int node = q.remove();
+            count++;
+            
+            for(int nbr : adj.get(node)){
+                indegree[nbr]--;
+                if(indegree[nbr]==0)
+                    q.add(nbr);
+            }
+            
+        }
         
-        
-        
+        return count < V;
     }
 }
