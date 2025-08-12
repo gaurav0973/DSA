@@ -2,15 +2,11 @@
 
 # 🔍 Binary Search
 
-## ➡️ Simple Binary Search
-
-## 🔼🔽 Lower and upper Bound
-
-## 🔄 smallest in rotated sorted array
-
-## 🎯 Binary search on answer
-
-## ⚖️ Median in two sorted arrays
+## Simple Binary Search
+## Lower and upper Bound
+## smallest in rotated sorted array
+## Binary search on answer
+## Median in two sorted arrays
 
 # 🔁 Cyclic Sort
 
