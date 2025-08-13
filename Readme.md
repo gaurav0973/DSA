@@ -22,6 +22,8 @@
 - [Max Sum Subarray of size K
 ](https://www.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1?page=1&category=CPP,sliding-window&sortBy=submissions)
 ## Variable size window
+- [Minimum Window Substring
+](https://www.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string-1587115621/1?page=1&category=sliding-window&difficulty=Hard&sortBy=submissions)
 - [K Sized Subarray Maximum
 ](https://www.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k3101/1?page=1&category=CPP,sliding-window&sortBy=submissions)
 -[First negative in every window of size k
@@ -36,12 +38,18 @@
 ](https://www.geeksforgeeks.org/problems/smallest-subarray-with-sum-greater-than-x5651/1?page=1&category=CPP,sliding-window&sortBy=submissions)
 - [Longest subarray with Atmost two distinct integers
 ](https://www.geeksforgeeks.org/problems/fruit-into-baskets-1663137462/1?page=1&category=CPP,sliding-window&sortBy=submissions)
-
 - [Largest subarray of 0's and 1's
 ](https://www.geeksforgeeks.org/problems/largest-subarray-of-0s-and-1s/1?page=1&category=CPP,sliding-window&sortBy=submissions)
 - [Smallest distinct window
 ](https://www.geeksforgeeks.org/problems/smallest-distant-window3132/1?page=1&category=CPP,sliding-window&sortBy=submissions)
 ## Number of subarray + condition
+- [Binary Subarray with Sum
+](https://www.geeksforgeeks.org/problems/binary-subarray-with-sum/1)
+- [Count Subarray with K Odds
+](https://www.geeksforgeeks.org/problems/count-subarray-with-k-odds/1)
+- [Count the number of Subarrays
+](https://www.geeksforgeeks.org/problems/count-the-number-of-subarrays/1?page=1&category=sliding-window&difficulty=Hard&sortBy=submissions)
+
 ## k-sum pattern
 
 - [Indexes of Subarray Sum
