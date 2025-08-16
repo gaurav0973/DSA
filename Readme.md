@@ -63,9 +63,60 @@
 
 # 🗄️ Stack and Queues
 
-# 🔄 Recursion
+## Hard Problems
+- [Trapping Rain Water](https://www.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1?page=1&category=CPP,stack&sortBy=submissions)
 
-# 🧩 Backtracking
+### Solution
+1. **Brute Force**
+- leftMaxElement
+- rightMaxElement
+- s = min(leftMaxElement, rightMaxElement)
+- ans += max(0, s - height[i])
+
+2. **Two Pointer Approach**: 
+- l = 0 , r = n-1
+- leftMax = 0, rightMax = 0
+- while(l <= r)
+    - leftMax = max(leftMax, height[l])
+    - rightMax = max(rightMax, height[r])
+    - if(leftMax <= rightMax)  ➡️🤔 matlb right wala bada hai => ans left se aayega
+        - ans += max(0, leftMax - height[l])
+        - l++
+    - else
+        - ans += max(0, rightMax - height[r])
+        - r--
+
+
+- [Histogram Max Rectangular Area](https://www.geeksforgeeks.org/problems/maximum-rectangular-area-in-a-histogram-1587115620/1?page=1&category=Stack,Queue&difficulty=Hard&sortBy=submissions)
+### Solution
+1. **Brute Force**
+   - find prevSmallerElement
+   - find nextSmallerElement
+   - Traverse(i=0 - n-1)
+        - width = (nse[i] - pse[i] - 1)
+        - area = width * height[i]
+        - maxArea = max(maxArea, area)
+
+2. **Optimal Approach**
+
+
+- [Longest Valid Parentheses](https://www.geeksforgeeks.org/problems/longest-valid-parentheses5657/1?page=1&category=Stack,Queue&difficulty=Hard&sortBy=submissions)
+
+### solution
+1. **Brute Force**
+   - store invalid indexes => O(n)
+   - diffrence b/w two consecutive invalid indexes will give the length of max valid substring
+2. **Optimal Approach**
+
+
+- [Max rectangle](https://www.geeksforgeeks.org/problems/max-rectangle/1?page=1&category=Stack,Queue&difficulty=Hard&sortBy=submissions)
+
+### solution
+- Prereq : Max area in a histogram
+- Use the same approach as finding the max area in a histogram for each row of the matrix.
+- Note : update the row values to represent the height of the bars in the histogram.
+
+
 
 # 🌳 Trees
 
